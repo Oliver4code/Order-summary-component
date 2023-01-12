@@ -356,7 +356,7 @@ html {
     box-sizing: inherit;
   }
   body{
-    background-image:url("./img/pattern-background-mobile.svg");
+    background-image:url("/img/pattern-background-mobile.svg");
     background-repeat:no-repeat ;
     background-color:var(--Pale-blue);
    
@@ -483,7 +483,7 @@ text-decoration: none;
 
 @media(min-width:768px){
     body{
-        background-image: url("./img/pattern-background-desktop.svg");
+        background-image: url("/img/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-size:100% 50%;
     }
