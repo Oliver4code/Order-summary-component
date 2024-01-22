@@ -164,7 +164,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -174,7 +175,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -338,160 +340,159 @@ template {
   display: none;
 }
 
-
-
-:root{
-    --Pale-blue: hsl(225, 100%, 94%);
---Bright-blue: hsl(245, 75%, 52%);
---Very-pale-blue: hsl(225, 100%, 98%);
---Desaturated-blue:hsl(224, 23%, 55%);
---Dark-blue:hsl(223, 47%, 23%);
---card-white:rgb(255 255 255);
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --card-white: rgb(255 255 255);
 }
 
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  body{
-    background-image:url("/img/pattern-background-mobile.svg");
-    background-repeat:no-repeat ;
-    background-color:var(--Pale-blue);
-   
-    background-size:100% 30%;
-  }
-  .container{
-    margin: 1em auto;
-    width: 90%;
-    /*background-color: red;*/
-   
-   
-    
-  }
-  .components{
-    display: flex;
-   justify-content: center;
-   
-    
+  box-sizing: border-box;
 }
-.component{
-    
-        background-color: var(--card-white);
-        border-radius: 1em;
-        overflow: hidden;
-        max-width: 375px;
-        font-family: 'Red Hat Display', sans-serif;
-    
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-image: url("/img/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: var(--Pale-blue);
+
+  background-size: 100% 30%;
+}
+.container {
+  margin: 1em auto;
+  width: 90%;
+  /*background-color: red;*/
+}
+.components {
+  display: flex;
+  justify-content: center;
+}
+.component {
+  background-color: var(--card-white);
+  border-radius: 1em;
+  overflow: hidden;
+  max-width: 375px;
+  font-family: "Red Hat Display", sans-serif;
 }
 
-.component-img{
-/*background-color: aquamarine;*/
-height:200px;
+.component-img {
+  /*background-color: aquamarine;*/
+  height: 200px;
 }
-.component-img img{
-    width: 100%;
-    height: 100%;
+.component-img img {
+  width: 100%;
+  height: 100%;
 }
-.content{
-    margin-top:2rem;
-    /*background-color: aquamarine;*/
-    text-align: center;
-    padding-left:1em ;
-    padding-right:1em ;
-    font-family: 'Red Hat Display', sans-serif;
+.content {
+  margin-top: 2rem;
+  /*background-color: aquamarine;*/
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-family: "Red Hat Display", sans-serif;
 }
-.content h1{
-    color: var(--Dark-blue);
-    font-size: 30px;
+.content h1 {
+  color: var(--Dark-blue);
+  font-size: 30px;
 }
-.content>p{
-    
-    /*background-color: brown;*/
-   color: var(--Desaturated-blue);
-    font-size:16px;
-    line-height: 1.5rem;
-}/*">" significa hijo directo de content*/
-.content-plan{
- /* border: 1px solid red;*/
+.content > p {
+  /*background-color: brown;*/
+  color: var(--Desaturated-blue);
+  font-size: 16px;
+  line-height: 1.5rem;
+} /*">" significa hijo directo de content*/
+.content-plan {
+  /* border: 1px solid red;*/
   height: 70px;
   background-color: var(--Very-pale-blue);
-   display: flex;
-   align-items: center;
-   border-radius: 1em;
-   justify-content: space-around;
+  display: flex;
+  align-items: center;
+  border-radius: 1em;
+  justify-content: space-around;
 }
-.content-plan-price{
-/*background-color: red;*/
-line-height:4px;
-margin-left: -3rem;
+.content-plan-price {
+  /*background-color: red;*/
+  line-height: 4px;
+  margin-left: -3rem;
 }
-.content-plan-price p:nth-child(1){
-    color: var(--Dark-blue);
-    font-weight: 700;
-    font-size: 16px;
-} 
-.content-plan-price p:nth-child(2){
-    color: var(--Desaturated-blue);
-   font-size:14px;
-} 
-.content-plan-change a{
-color: var(--Bright-blue);
-font-size: 14px;
+.content-plan-price p:nth-child(1) {
+  color: var(--Dark-blue);
+  font-weight: 700;
+  font-size: 16px;
 }
- 
-.content-button1-link{
-text-decoration: none;
+.content-plan-price p:nth-child(2) {
+  color: var(--Desaturated-blue);
+  font-size: 14px;
 }
-.content-button1{
-    margin-top: 1rem;
-    background-color: var(--Bright-blue);
-    height: 3rem;
-    border-radius: 1em;
-    -webkit-box-shadow: 0px 7px 15px 4px rgba(56, 41, 224, 0.23);
-     box-shadow: 0px 7px 15px 4px rgba(56, 41, 224, 0.23);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-        }
-.content-button1 a{
-    color: white;
-    font-weight: 700;
-    font-size: 14px;
-   
-   
-}
-.content-button1:hover{
-    background-color: #6156e6;
+.content-plan-change a {
+  color: var(--Bright-blue);
+  font-size: 14px;
 }
 
-.content-button2{
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    
-}
-.content-button2 a{
-    color:var(--Desaturated-blue);
-    font-weight: 700;
-    font-size: 14px;
-}
-.content-button2 a:hover{
-    color:var(--Dark-blue);
+.content-button1-link {
+  text-decoration: none;
 }
 
-@media(min-width:768px){
-    body{
-        background-image: url("/img/pattern-background-desktop.svg");
+.btn {
+  border: none;
+  display: block;
+  width: 100%;
+  padding-block: 1rem;
+  border-radius: 1em;
+  background-color: transparent;
+}
+
+.content-button1 {
+  margin-top: 1rem;
+  background-color: var(--Bright-blue);
+  height: 3rem;
+  border-radius: 1em;
+  -webkit-box-shadow: 0px 7px 15px 4px rgba(56, 41, 224, 0.23);
+  box-shadow: 0px 7px 15px 4px rgba(56, 41, 224, 0.23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.content-button1 a {
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+.content-button1:hover {
+  background-color: #6156e6;
+}
+
+.content-button2 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.content-button2 a {
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+  font-size: 14px;
+}
+.content-button2 a:hover {
+  color: var(--Dark-blue);
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("/img/pattern-background-desktop.svg");
     background-repeat: no-repeat;
-    background-size:100% 50%;
-    }
-    
-    .components{
-        display: flex;
-        align-items: center;
-      
-        height: 100vh;
-    }
+    background-size: 100% 50%;
+  }
+
+  .components {
+    display: flex;
+    align-items: center;
+
+    height: 100vh;
+  }
 }
